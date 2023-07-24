@@ -18,9 +18,9 @@ export const ContactList = () => {
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  
-    return (
-      <ul className={css.list}>
+
+  return (
+    <ul className={css.list}>
       {filteredContacts.map(({ id, name, number }) => (
         <li key={id} className={css.item}>
           <p className={css.text}>
@@ -43,4 +43,3 @@ ContactList.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.string),
   onDeleteContact: PropTypes.func,
 };
-
