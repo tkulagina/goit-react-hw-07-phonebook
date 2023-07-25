@@ -1,5 +1,5 @@
 .list {
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 60vw;
   margin: 0;
@@ -19,6 +19,8 @@
 
 .item {
   display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
   gap: 30px;
   justify-content: space-between;
   align-items: center;
